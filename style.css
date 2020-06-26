@@ -1,0 +1,188 @@
+/* Global */
+
+:root {
+  /* Color */
+
+  --color-white: #ffffff;
+
+  --color-brown: #d7ccc8;
+
+  --color-light-white: #eeeeee;
+
+  --color-dark-white: #bdbdbd;
+
+  --color-pink: #fe918d;
+
+  --color-pink2: #f8bbd0;
+
+  --color-dark-pink: #ff6863;
+
+  --color-dark-grey: #4d4d4d;
+
+  --color-grey: #616161;
+
+  --color-light-grey: #7c7979;
+
+  --color-blue: #73aace;
+
+  --color-yellow: #fff7d1;
+
+  --color-orange: #feb546;
+
+  --color-black: #000000;
+
+  --color-yellow: #fbc02d;
+
+  --color-green: #c8e6c9;
+
+  /* Font size */
+
+  --font-large: 48px;
+
+  --font-medium: 28px;
+
+  --font-regular: 18px;
+
+  --font-small: 16px;
+
+  --font-micro: 14px;
+
+  /* Font weight */
+
+  --weight-bold: 700;
+
+  --weight-semi-bold: 600;
+
+  --weight-regular: 400;
+
+  /* Size */
+
+  --size-border-radius: 4px;
+}
+
+/* Typography */
+
+h1 {
+  font-size: var(--font-large);
+
+  font-weight: var(--weight-bold);
+
+  color: var(--color-black);
+
+  margin: 16px 0px;
+}
+
+a {
+  color: inherit; /* url 아이콘 보라색 표시 안나오게 하는 방법 */
+  text-decoration: none; /* 밑줄 없애기 */
+}
+
+h2 {
+  font-size: var(--font-medium);
+
+  font-weight: var(--weight-semi-bold);
+
+  color: var(--color-black);
+
+  margin: 8px 0;
+}
+
+h3 {
+  font-size: var(--font-regular);
+
+  font-weight: var(--weight-regular);
+
+  color: var(--color-black);
+
+  margin: 8px 0;
+}
+
+p {
+  font-size: var(--font-regular);
+
+  font-weight: var(--weight-regular);
+
+  color: var(--color-black);
+
+  margin: 4px 0;
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-yellow);
+  align-items: center;
+  color: var(--color-white);
+  padding: 16px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  text-decoration: none;
+  color: var(--color-whilte);
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.navbar__menu {
+  display: flex;
+}
+
+.navbar__logo {
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__menu__item {
+  padding: 8px 12px;
+  margin: 0px 4px;
+  cursor: pointer;
+}
+
+.navbar__menu__item.active {
+  border: 1px solid var(--color-whtie);
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu__item:hover {
+  background-color: var(--color-dark-pink);
+}
+
+#home {
+  background: url("images/background.jpg");
+  padding: 40px;
+  text-align: center;
+}
+
+.home__avatar {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.home__description {
+  color: #fafafa;
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-bold);
+  margin: 24px;
+  padding: 8px 12px;
+}
