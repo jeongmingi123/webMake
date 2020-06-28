@@ -112,7 +112,7 @@ p {
 #navbar {
   display: flex;
   justify-content: space-between;
-  background-color: var(--color-yellow);
+  background-color: #ffca28;
   align-items: center;
   color: var(--color-white);
   padding: 16px;
@@ -269,7 +269,7 @@ button {
 
 /* Skill */
 #skills {
-  background-color: var(--color-yellow);
+  background-color: #fff59d;
   color: var(--color-light-white);
 }
 
@@ -311,4 +311,13 @@ button {
 .skill__value {
   height: 3px;
   background-color: var(--color-orange);
+}
+
+.skill {
+  margin-bottom: 32px;
+}
+
+.tools,
+.etc {
+  padding: 20px;
 }
