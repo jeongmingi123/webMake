@@ -134,6 +134,7 @@ li {
 }
 
 button {
+  /* 뒤의 배경과 어울리게 만들기 */
   background-color: transparent;
   cursor: pointer;
 }
@@ -185,4 +186,47 @@ button {
   font-weight: var(--weight-bold);
   margin: 24px;
   padding: 8px 12px;
+  border: 2px solid var(--color-white);
+  color: var(--color-white);
+}
+
+/* section */
+
+.section {
+  padding: 50px;
+  text-align: center;
+  /* 만약 text-align:center;를 적어주었을 때, 중간으로 정렬이 안되면 다음과 같이 적어줄 것 -> max-width:1200px */
+}
+/* About */
+
+.about__major {
+  display: flex;
+  justify-content: space-between;
+  margin: 80px 0;
+}
+
+.major__icon {
+  width: 170px;
+  height: 170px;
+
+  line-height: 170px;
+  font-size: 70px;
+  margin: auto;
+  border: 1px solid var(--color-blue);
+  border-radius: 50%;
+  margin-bottom: 16px;
+  color: var(--color-blue);
+}
+
+.major__title,
+.major__description {
+  color: var(--color-dark-grey);
+}
+
+.major__description {
+  font-size: var(--font-small);
+}
+
+.major__icon:hover {
+  color: var(--color-pink);
 }
