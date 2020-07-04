@@ -110,9 +110,12 @@ p {
 }
 
 #navbar {
+  position: fixed;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  background-color: #fff59d;
+  /* background-color: #fff59d; */
+  background-color: transparent;
   align-items: center;
   color: #546e7a;
 
@@ -171,6 +174,7 @@ button {
   background: url("images/back.png");
   padding: 40px;
   text-align: center;
+  padding-top: 120px;
 }
 
 .home__avatar {
