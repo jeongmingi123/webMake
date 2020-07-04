@@ -2,6 +2,7 @@
 
 const navbar = document.querySelector("#navbar");
 const navbarHeight = navbar.getBoundingClientRect().height;
+console.log(`${navbarHeight}`);
 
 document.addEventListener(`scroll`, () => {
   console.log(window.scrollY);
