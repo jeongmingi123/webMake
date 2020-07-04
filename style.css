@@ -109,20 +109,9 @@ p {
   margin: 4px 0;
 }
 
-#navbar {
-  position: fixed;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  /* background-color: #fff59d; */
-  background-color: transparent;
-  align-items: center;
-  color: #546e7a;
-
-  padding: 16px;
-}
-
 * {
+  margin: 0px;
+  padding: 0px;
   box-sizing: border-box;
 }
 
@@ -144,6 +133,24 @@ button {
   /* 뒤의 배경과 어울리게 만들기 */
   background-color: transparent;
   cursor: pointer;
+}
+
+#navbar {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background-color: transparent;
+  color: #546e7a;
+  z-index: 1; /* 제일 맨위로 만들기 */
+  transition: all var(--animation-duration) ease-in-out;
+}
+
+#navbar.navbar--dark {
+  background-color: #fff59d;
+  padding: 8px;
 }
 
 .navbar__menu {
