@@ -135,6 +135,11 @@ button {
   cursor: pointer;
 }
 
+.opacity {
+  opacity: 0.5;
+  background-color: red;
+}
+
 #navbar {
   position: fixed;
   width: 100%;
